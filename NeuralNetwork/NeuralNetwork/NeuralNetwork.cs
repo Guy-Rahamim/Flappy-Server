@@ -35,6 +35,11 @@ public class NeuralNetwork : System.IEquatable<NeuralNetwork>, System.IComparabl
 			hidden[i] = new HiddenNeuron(outputs.Length);
 		}
 
+		for(int i = 0; i < outputs.Length; i++)
+		{
+			outputs[i] = new OutputNeuron();
+		}
+
 
 	}
 
